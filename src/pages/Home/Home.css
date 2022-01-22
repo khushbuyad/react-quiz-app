@@ -1,0 +1,60 @@
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.category-container {
+  width: 45%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  color: antiquewhite;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(180, 175, 175);
+}
+/* .banner {
+    width: 55%;
+    align-self: center;
+    padding: 8px;
+  } */
+
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  /* .banner {
+      width: 85%;
+      padding: 0;
+      padding-top: 20px;
+    } */
+  .category-container {
+    width: 100%;
+  }
+}
+
+.settings__select {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  flex: 0.8;
+  justify-content: space-evenly;
+}
