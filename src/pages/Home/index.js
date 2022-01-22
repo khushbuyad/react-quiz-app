@@ -10,8 +10,7 @@ const Home = ({ fetchQuestions }) => {
   //   setCategory(val);
   // };
   const handleCategory = (val) => {
-    //setCategory(val)
-    console.log(category);
+    setCategory(val);
     fetchQuestions(val);
     history("quiz");
   };
